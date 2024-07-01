@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+    }
+
+    body{
+      padding-bottom: 1000px;
+    }
+
+    
+
+    .nav-bar img{
+      margin-left:200px;
+      margin-top:27px;
+      height: 70px;
+    }
+    .container{
+      background-image: url("images/bg-desktop.svg");
+      background-color: rgb(78, 78, 170);
+      height:830px;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      /* padding:28px; */
+      /* margin:px; */
+    }
+
+    /* content section */
+    .content-section{
+      /* border: 2px solid red; */
+      display: flex;
+      flex-direction: row;
+      margin-left: 120px;
+      margin-top:29px;
+    }
+
+    .content-section img{
+      height: 600px;
+      margin-top:18px;
+      margin-left:100px;
+    }
+
+
+    .content-section-desc{
+      /* border: 1px solid red; */
+      width:500px;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      margin-left: 100px;
+    }
+
+    .content-section-desc-heading h1{
+      width: 360px;
+      color:white;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 44px;
+      margin-bottom: 18px;
+    }
+
+    .content-section-desc-foot p{
+      font-size: 20px;
+      color: white;
+      line-height: 24px;
+      margin-bottom: 18px;
+    }
+
+
+    /* box shadow in this button */
+    .content-section-desc-foot button{
+      padding:14px 56px;
+      font-size:22px;
+      background-color: white;
+      font-weight: 100;
+      color:rgb(83, 82, 82);
+      border-radius: 33px;
+      border:none;
+      /* box-shadow: rgb(133, 128, 128); */
+      box-shadow: 5px 10px 10px rgb(0, 0, 0,0.5);
+
+    }
+
+    .footer-section{
+      display: flex;
+      justify-content: end;
+      gap:22px;
+      width:300px;
+      margin-left:85%;
+      /* border:1px solid red; */
+    }
+
+
+    .footer-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-section img{
+      height:48px;
+    }
+
+    /* 455 px for mobile devices */
+    /* 455 - 750 tablet */
+    /* 750 -1080 ultra wide monitors */
+
+    @media only screen and (max-width: 1110px) {
+  body {
+    padding-bottom: 0; /* Reset the excessive padding */
+  }
+
+  .nav-bar img {
+    margin-left: 20px; /* Adjust margin for logo */
+    margin-top: 10px;
+    height: 50px;
+  }
+
+  .container {
+    background-image: none; /* Remove background image on smaller screens */
+    height: auto; /* Allow container height to adjust */
+  }
+
+  .content-section {
+    flex-direction: column; /* Stack content vertically */
+    margin-left: 20px; /* Adjust margin for content section */
+    margin-top: 10px;
+  }
+
+  .content-section img {
+    height: auto; /* Make image responsive */
+    margin-left: 0; /* Center image */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .content-section-desc {
+    width: 100%; /* Take full width on smaller screens */
+    margin: 0 20px; /* Adjust margins */
+  }
+
+  .content-section-desc-heading h1 {
+    width: 100%; /* Full width for heading */
+    font-size: 28px; /* Decrease font size */
+    line-height: 36px; /* Adjust line height */
+    margin-bottom: 12px; /* Adjust spacing */
+  }
+
+  .content-section-desc-foot {
+    margin-bottom: 20px; /* Space between text and button */
+  }
+
+  .footer-section {
+    justify-content: center; /* Center align footer icons */
+    margin-left: 0; /* Reset margin */
+  }
+
+  .footer-section img {
+    height: 40px; /* Adjust footer icon size */
+    margin: 0 10px; /* Adjust spacing between icons */
+  }
+
+  .content-section-desc-foot button {
+    padding: 12px 40px; /* Adjust button padding */
+    font-size: 18px; /* Decrease button font size */
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- main div -->
+  <div class="container">
+    <!-- nav bar logo section -->
+    <div class="nav-bar">
+      <img src="images/logo.svg" alt="logo image" height="50px">
+    </div>
+
+    <!-- content section -->
+    <div class="content-section">
+      <img src="images/illustration-mockups.svg" alt="image-landing-page" >
+      <div class="content-section-desc">
+
+        <div class="content-section-desc-heading">
+          <h1>Build The Community Your Fans Will Love</h1>
+        </div>  
+
+        <div class="content-section-desc-foot">
+          <p>  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+            Create connections with your users as you engage in genuine discussion. </p>
+            <button>Register</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer links -->
+    <div class="footer-section">
+      <img src="images/download.png" alt="facebook logo">
+      <img src="images/download (1).png" alt="instagram logo">
+      <img src="images/download (2).png" alt="x logo" >
+    </div>
+  </div>
+
+
+<!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">ashish karki</a>.
+    </p>
+  </footer>  -->
+</body>
+</html>
