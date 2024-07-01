@@ -1,0 +1,157 @@
+*{
+margin: 0;
+padding: 0;    
+box-sizing: border-box;
+/* font-family: "Young Serif", serif;
+font-weight: 400;
+font-style: normal; */
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.young-serif-regular {
+font-family: "Young Serif", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+body{
+padding-bottom: 100px;
+background-color: rgb(238, 233, 231);
+}
+.container{
+display: flex;
+flex-direction: column;
+margin-top:40px;
+width:680px;
+margin-left: auto;
+margin-right: auto;
+background-color: white;
+border-radius: 12px;
+/* background-color: gray; */
+}
+.omlette-image{
+border:1px solid rgb(155, 163, 155);
+border-radius: 8px;
+width:550px;
+margin:22px auto 22px auto;
+/* padding:18px; */
+
+}
+
+.container-desc{
+width:600px;
+/* border:1px solid green; */
+margin-left:auto;
+margin-right: auto;
+margin-bottom: 30px;
+}
+
+.container-desc h1{
+margin-left:25%;
+margin-bottom:14px;
+}
+
+.container-desc p{
+line-height: 25px;
+color:rgb(56, 56, 56);
+font-weight:400;
+font-size: 16px;
+}
+
+.container-preparation_time ,.ingredients-container{
+/* border:1px solid green; */
+height:150px;
+width:600px;
+display: flex;
+flex-direction: column;
+margin-left:48px;
+line-height: 28px;
+margin-bottom: 32px;
+margin-left:auto;
+margin-right: auto;
+
+/* background-color: rgb(255, 164, 164);
+*/
+}
+
+.container-preparation_time h3,.ingredients-container h2,.instructions-container h2,.nutrition-container h2{
+color:rgb(153, 58, 58);
+margin-bottom: 12px;
+}
+
+.prep-title{
+font-weight: bold;
+margin-left:8px;
+}
+
+.instructions-container{
+height:400px;
+width:610px;
+/* border:1px solid red; */
+margin-left: auto;
+margin-right: auto;
+margin-top: 32px;
+display: flex;
+flex-direction: column;
+text-align: justify;
+}
+
+.instructions-container span{
+font-weight: bold;
+}
+
+.instructions-container li{
+line-height: 27px;
+margin-left:12px;
+
+}
+
+.nutrition-container{
+/* border: 1px solid red; */
+margin-top: 22px;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.nutrition-container p{
+font-size: 18px;
+margin-top: 18px;
+
+}
+
+.nutrition-container-desc span{
+color:rgb(153, 58, 58);
+font-weight: 700;
+/* margin-left: 170px; */
+/* margin-top: 2%; */
+/* margin-bottom: 2%; */
+/* margin-left:50%; */
+}
+
+.nutrition-container-desc{
+/* border:1px solid red; */
+width:200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* border:1px solid red; */
+width:500px;
+}
+
+.nutrition-container-desc p{
+
+display: flex;
+
+/* gap:200px; */
+align-items: start;
+font-weight: 700;
+justify-content:space-evenly;
+text-align: start;
+
+}
